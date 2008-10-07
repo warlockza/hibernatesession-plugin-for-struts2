@@ -1,17 +1,13 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
-
-Trabalhar com Hibernate para WEB, independente do framework usado, exige o uso do padrão "Open Session in View".
-
-
 = Introdução =
 
-Add your content here.
+Trabalhar com Hibernate para WEB, independente do framework usado, exige o uso do padrão "Open Session in View". 
 
-= Details =
+Aplicar tal padrão no Struts 2 é uma tarefa meio trabalhosa que exige o uso de Interceptors.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Para evitar a criação de Interceptors com essa finalidade em cada projeto, foi criado este plugin o qual oferece um Interceptor que abre uma Sessão Hibernate, coloca no Value Stack da Action e (opcionalmente) fecha a mesma após o invokation.
+
+
+
+Exemplos de uso em *Downloads*
