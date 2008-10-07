@@ -1,4 +1,4 @@
-#summary Mini Tutorial.
+#summary Introdução.
 
 = Introdução =
 
