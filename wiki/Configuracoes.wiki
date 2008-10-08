@@ -8,12 +8,13 @@ A classe que funciona como Interceptor é a *com.googlecode.s2hibernate.struts2.
 = Parâmetros =
 
   * *_sessionFactoryClass_* - Classe que funciona como fábrica de sessões hibernate no projeto
-Exemplos: _sessaoHibernate_; _fachada.sessaoHibernate_
+Exemplo: _com.meuprojeto.hibernate.HibernateSessionFactory_
 
   * *_sessionSource_* - Getter do método na classe indicada em _sessionFactoryClass_ que retorna a Sessão Hibernate
 Exemplo: _sessaohib_ (o que equivale a um método _getSessaoHib()_)
 
   * *_target_* - Objeto na Action que vai receber a Sessão Hibernate
+Exemplos: _sessaoHibernate_; _fachada.sessaoHibernate_
 
   * *_staticGetSessionMethod_* - Indica se o método que retorna a Sessão Hibernate é estático ou não. Opcional. Padrão *true*.
 
