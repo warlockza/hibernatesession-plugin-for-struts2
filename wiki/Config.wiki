@@ -11,7 +11,7 @@ The Interceptor class is *com.googlecode.s2hibernate.struts2.plugin.s2hibernates
 Example: com.myproject.hibernate.HibernateSessionFactory
 
   * *_sessionSource_* - Getter in the class named in _sessionFactoryClass_ that returns a Hibernate Sessoin
-Exemplo: _session_ (indicates the _getSessao()_ method)
+Example: _session_ (indicates the _getSessao()_ method)
 
   * *_target_* - Target object in Action 
 Examples: _hibernateSession_; _facade.hibernateSession_
