@@ -1,0 +1,20 @@
+#summary Configurações.
+
+= Hibernate Session Interceptor =
+
+A classe que funciona como Interceptor é a *com.googlecode.s2hibernate.struts2.plugin.s2hibernatesession.HibernateSessionInterceptor*
+
+
+= Parâmetros =
+
+  * *_sessionFactoryClass_* - Classe que funciona como fábrica de sessões hibernate no projeto
+Exemplos: _sessaoHibernate_; _fachada.sessaoHibernate_
+
+  * *_sessionSource_* - Getter do método na classe indicada em _sessionFactoryClass_ que retorna a Sessão Hibernate
+Exemplo: _sessaohib_ (o que equivale a um método _getSessaoHib()_)
+
+  * *_target_* - Objeto na Action que vai receber a Sessão Hibernate
+
+  * *_staticGetSessionMethod_* - Indica se o método que retorna a Sessão Hibernate é estático ou não. Opcional. Padrão *true*.
+
+  * *_closeSessionAfterInvoke_* - Indica se a Sessão Hibernate deve ser ou não fechada após a invocação da action. Opcional. Padrão *true*.
