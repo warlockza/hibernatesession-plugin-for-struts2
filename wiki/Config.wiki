@@ -5,7 +5,7 @@
 The Interceptor class is *com.googlecode.s2hibernate.struts2.plugin.s2hibernatesession.HibernateSessionInterceptor*
 
 
-= Package _hibernatesession-default_ (version 1.5) =
+= Package _hibernatesession-default_ (version 1.5+) =
 
      Since *1.5* version you can use the *hibernatesession-default*, that extends *struts-defaults*. This have 2 special Interceptor Stacks:
 
@@ -29,7 +29,7 @@ The Interceptor class is *com.googlecode.s2hibernate.struts2.plugin.s2hibernates
 
 
 
-= Configuration Constants by Project _(version 1.5)_ =
+= Configuration Constants by Project _(version 1.5+)_ =
 
      Since *1.5* version you can configure the plugin once by project using configuration constants. Thie can be done in *struts.properties* or in *struts.xml* (using the *constant* tag).
 
@@ -41,8 +41,10 @@ Example: com.myproject.hibernate.HibernateSessionFactory
   * *_struts2hibernateplugin.defaults.sessionSource_* - Getter in the class named in _sessionFactoryClass_ that returns a Hibernate Sessoin
 Example: _session_ (indicates the _getSessao()_ method)
 
-  * *_struts2hibernateplugin.defaults.target_* - Target object in Action 
+  * *_struts2hibernateplugin.defaults.target_* - Target object in Action. Since *1.5b* version, you can use *Wildcard* (asterisk)  
 Examples: _hibernateSession_; _facade.hibernateSession_
+
+Examples using *wildcard* (since *1.5b* version): _hibernateSession*_; _*Facade.hibernateSession_
 
   * *_struts2hibernateplugin.defaults.staticGetSessionMethod_* - Is the method named in _sessionSource_ static?. Optional. Default *true*.
 
@@ -59,7 +61,7 @@ Examples: _hibernateSession_; _facade.hibernateSession_
 
   * *_sessionSource_* - Getter in the class named in _sessionFactoryClass_ that returns a Hibernate Sessoin
 
-  * *_target_* - Target object in Action 
+  * *_target_* - Target object in Action. Since *1.5b* version, you can use *Wildcard* (asterisk)  
 
   * *_staticGetSessionMethod_* - Is the method named in _sessionSource_ static?. Optional. Default *true*.
 
