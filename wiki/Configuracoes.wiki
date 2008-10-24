@@ -8,7 +8,7 @@ A classe que funciona como Interceptor é a
 
 
 
-= Pacote _hibernatesession-default_ (versão 1.5) =
+= Pacote _hibernatesession-default_ (versão 1.5+) =
 
      A partir da versão *1.5* é oferecido o pacote *hibernatesession-default*, que é uma extenção do *struts-defaults*. Ele oferece 2 pilhas de Interceptors prontas:
 
@@ -31,7 +31,7 @@ A classe que funciona como Interceptor é a
 
 
 
-= Constantes de configuração por projeto _(versão 1.5)_ =
+= Constantes de configuração por projeto _(versão 1.5+)_ =
 
      A partir da versão *1.5* é possivel definir configurações padrões para o Hibernate Session Plugin para todo o projeto. Tais constantes podem ser definidas tanto no arquivo *struts.properties* quanto no *struts.xml* usando-se a tag *<constant name="?" value="?" />*
 
@@ -43,8 +43,9 @@ Exemplo: com.meuprojeto.hibernate.HibernateSessionFactory
   * *_struts2hibernateplugin.defaults.sessionSource_* - Getter do método na classe indicada em _sessionFactoryClass_ que retorna a Sessão Hibernate
 Exemplo: _sessaohib_ (o que equivale a um método _getSessaoHib()_)
 
-  * *_struts2hibernateplugin.defaults.target_* - Objeto na Action que vai receber a Sessão Hibernate
+  * *_struts2hibernateplugin.defaults.target_* - Objeto na Action que vai receber a Sessão Hibernate. É possivel usar o caractere *Coringa* (asterisco), a partir da versão *1.5b*.
 Exemplos: _sessaoHibernate_; _fachada.sessaoHibernate_
+Exemplos com coringas (a partir da versão *1.5b*): _sessaoHibernate*_; _*Fachada.sessaoHibernate_
 
   * *_struts2hibernateplugin.defaults.staticGetSessionMethod_* - Indica se o método que retorna a Sessão 
 
@@ -66,7 +67,7 @@ ou não fechada após a invocação da action. Opcional. Padrão *true*.
 
   * *_sessionSource_* - Getter do método na classe indicada em _sessionFactoryClass_ que retorna a Sessão Hibernate
 
-  * *_target_* - Objeto na Action que vai receber a Sessão Hibernate
+  * *_target_* - Objeto na Action que vai receber a Sessão Hibernate. É possivel usar o caractere *Coringa* (asterisco), a partir da versão *1.5b*.
 
   * *_staticGetSessionMethod_* - Indica se o método que retorna a Sessão Hibernate é estático ou não. Opcional. Padrão *true*.
 
