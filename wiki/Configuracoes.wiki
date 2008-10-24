@@ -45,6 +45,7 @@ Exemplo: _sessaohib_ (o que equivale a um método _getSessaoHib()_)
 
   * *_struts2hibernateplugin.defaults.target_* - Objeto na Action que vai receber a Sessão Hibernate. É possivel usar o caractere *Coringa* (asterisco), a partir da versão *1.5b*.
 Exemplos: _sessaoHibernate_; _fachada.sessaoHibernate_
+
 Exemplos com coringas (a partir da versão *1.5b*): _sessaoHibernate*_; _*Fachada.sessaoHibernate_
 
   * *_struts2hibernateplugin.defaults.staticGetSessionMethod_* - Indica se o método que retorna a Sessão 
