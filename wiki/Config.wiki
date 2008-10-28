@@ -41,10 +41,10 @@ Example: com.myproject.hibernate.HibernateSessionFactory
   * *_struts2hibernateplugin.defaults.sessionSource_* - Getter in the class named in _sessionFactoryClass_ that returns a Hibernate Sessoin
 Example: _session_ (indicates the _getSessao()_ method)
 
-  * *_struts2hibernateplugin.defaults.target_* - Target object in Action. Since *1.5b* version, you can use *Wildcard* (asterisk)  
+  * *_struts2hibernateplugin.defaults.target_* - Target object in Action. Since *1.5b* version, you can use *Wildcard* (asterisk `*`)  
 Examples: _hibernateSession_; _facade.hibernateSession_
 
-Examples using *wildcard* (since *1.5b* version): _hibernateSession*_; _*Facade.hibernateSession_
+Examples using *wildcard* (since *1.5b* version): _hibernateSession`*`_; _`*`Facade.hibernateSession_
 
   * *_struts2hibernateplugin.defaults.staticGetSessionMethod_* - Is the method named in _sessionSource_ static?. Optional. Default *true*.
 
