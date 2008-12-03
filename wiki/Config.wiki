@@ -10,16 +10,20 @@ The Interceptor class is *com.googlecode.s2hibernate.struts2.plugin.s2hibernates
      Since *1.5* version you can use the *hibernatesession-default*, that extends *struts-defaults*. This have 2 special Interceptor Stacks:
 
 *basicStackWithHibernateSession*
+{{{
 <interceptor-stack name="basicStackWithHibernateSession">
     <interceptor-ref name="hibernateSessionInterceptor"/>
     <interceptor-ref name="basicStack"/>
 </interceptor-stack>
+}}}
 
 *defaultStackWithHibernateSession*
+{{{
 <interceptor-stack name="defaultStackWithHibernateSession">
     <interceptor-ref name="hibernateSessionInterceptor"/>
     <interceptor-ref name="defaultStack"/>
 </interceptor-stack>
+}}}
 
      The default stack for this package is the *defaultStackWithHibernateSession*.
 
