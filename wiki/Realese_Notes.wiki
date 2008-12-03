@@ -2,12 +2,12 @@
 
 *Bug Fix 1* _(Since: 1.0)_
 
-If the setter marked as the *target* for the Hibernate Session is from the super class of the mapped Action a Exception is thrown. *Fixed since 1.5c*.
+If the _setter_ marked as the *target* for the Hibernate Session is from the super class of the mapped Action a Exception is thrown. *Fixed since 1.5c*.
 
 
 
 
-*Feature 1*
+*New Feature 1*
 
 Multiple packages can be extended with the *hibernatesession-default*.
 Example: 
