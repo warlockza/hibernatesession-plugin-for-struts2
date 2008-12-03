@@ -13,16 +13,20 @@ A classe que funciona como Interceptor é a
      A partir da versão *1.5* é oferecido o pacote *hibernatesession-default*, que é uma extenção do *struts-defaults*. Ele oferece 2 pilhas de Interceptors prontas:
 
 *basicStackWithHibernateSession*
+{{{
 <interceptor-stack name="basicStackWithHibernateSession">
     <interceptor-ref name="hibernateSessionInterceptor"/>
     <interceptor-ref name="basicStack"/>
 </interceptor-stack>
+}}}
 
 *defaultStackWithHibernateSession*
+{{{
 <interceptor-stack name="defaultStackWithHibernateSession">
     <interceptor-ref name="hibernateSessionInterceptor"/>
     <interceptor-ref name="defaultStack"/>
 </interceptor-stack>
+}}}
 
      A pilha padrão para este pacote é a *defaultStackWithHibernateSession*.
 
