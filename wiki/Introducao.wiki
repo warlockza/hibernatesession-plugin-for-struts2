@@ -2,7 +2,7 @@
 
 = Introdução =
 
-É recomendado o uso do padrão "Open Session in View" para aplicações WEB com Hibernate. 
+É recomendado o uso do padrão "Open Session in View" para aplicações WEB com o Hibernate Core. 
 
 Este Plugin oferece um Interceptor  que abre uma Sessão Hibernate, coloca no Value Stack da Action e a fecha (ou não) após a Action ser invocada.
 
