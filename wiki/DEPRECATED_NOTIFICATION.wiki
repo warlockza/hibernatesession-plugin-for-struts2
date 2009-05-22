@@ -1,5 +1,6 @@
 #summary Project Deprecated Notification.
 
 =<font color="red">This project is <u>Deprecated</u>!</font>=
+(since 21 may 2009)
 
 ===Visit the new [http://cwiki.apache.org/S2PLUGINS/full-hibernate-plugin.html Full Hibernate Plugin] for Struts 2 Homepage===
