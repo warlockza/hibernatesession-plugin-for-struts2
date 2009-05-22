@@ -1,0 +1,3 @@
+=<font color="red">This project is <u>Deprecated</u>!</font>=
+
+===Visit the new [http://cwiki.apache.org/S2PLUGINS/full-hibernate-plugin.html Full Hibernate Plugin] for Struts 2 Homepage===
